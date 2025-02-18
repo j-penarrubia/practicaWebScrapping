@@ -4,20 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-
+        <!-- Banner publicitario -->
+        <div class="banner-ad">
+            <img src="banner.jpg" alt="Banner Publicitario">
+        </div>
+        <!-- Menú de navegación -->
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <h2>Chuso Maricón</h2>
+        <!-- Sección de Productos -->
+        <section id="productos">
+            <h2>Productos</h2>
+            <div class="products-container">
+                <!-- Ejemplo de tarjeta de producto (los datos se cargarán dinámicamente desde el JSON) -->
+                <div class="product-card">
+                    <img src="producto1.jpg" alt="Producto 1">
+                    <h3>Producto 1</h3>
+                    <p class="price">$100</p>
+                </div>
+                <div class="product-card">
+                    <img src="producto2.jpg" alt="Producto 2">
+                    <h3>Producto 2</h3>
+                    <p class="price">$150</p>
+                </div>
+                <div class="product-card">
+                    <img src="producto3.jpg" alt="Producto 3">
+                    <h3>Producto 3</h3>
+                    <p class="price">$200</p>
+                </div>
+                <div class="product-card">
+                    <img src="producto4.jpg" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p class="price">$250</p>
+                </div>
+                <!-- Se agregarían más tarjetas de producto para completar la grilla -->
+            </div>
+        </section>
+
+        <!-- Sección de Noticias (RSS y ATOM) -->
+        <section id="noticias">
+            <h2>Noticias</h2>
+            <div class="news-container">
+                <div class="news-section rss-news">
+                    <h3>Noticias RSS</h3>
+                    <!-- Ejemplo de noticia RSS -->
+                    <div class="news-item">
+                        <h4>Título noticia RSS 1</h4>
+                        <p>Resumen de la noticia RSS 1...</p>
+                    </div>
+                    <!-- Más noticias RSS -->
+                </div>
+                <div class="news-section atom-news">
+                    <h3>Noticias ATOM</h3>
+                    <!-- Ejemplo de noticia ATOM -->
+                    <div class="news-item">
+                        <h4>Título noticia ATOM 1</h4>
+                        <p>Resumen de la noticia ATOM 1...</p>
+                    </div>
+                    <!-- Más noticias ATOM -->
+                </div>
+            </div>
+        </section>
     </main>
 
-    <body>
-
-    </body>
+    <footer>
+        <!-- Iframe de Google Maps -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.0607391984793!2d-122.08560808469056!3d37.4219997798255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5c5cb2b4a3b%3A0x8c1d3a26c81f6b8!2sGoogleplex!5e0!3m2!1ses!2sus!4v1584565865328!5m2!1ses!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </footer>
 </body>
 
 </html>
